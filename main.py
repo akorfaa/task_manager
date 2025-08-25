@@ -1,17 +1,8 @@
-import add
-import show
-import update
-import delete
+from oop import Chat
 
-add_task_response = add.add_task("Sleep")
-print(add_task_response)
+chat_with_abena =Chat()
 
-show_task_response = show.show_tasks()
-print(show_task_response)
-
-update_task_response = update.update_task("Sleep", "Wake Up")
-print(update_task_response)
-
-delete_task_response = delete.delete_task("Wake Up")
-print(delete_task_response)
-
+# this will execute the __str__ attribute
+# runs anytime you're trying to print to the console (not compulsory but
+# help your code work better)
+print(chat_with_abena)
