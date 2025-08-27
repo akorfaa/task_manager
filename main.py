@@ -1,8 +1,15 @@
-from oop import Chat
+import tkinter as tk
+import ui
 
-chat_with_abena =Chat()
+# create app name it app or root
+app = tk.Tk()
+# set a title of the app
+app.title("Task Manager")
+# give it a size
+app.geometry("720x480")
 
-# this will execute the __str__ attribute
-# runs anytime you're trying to print to the console (not compulsory but
-# help your code work better)
-print(chat_with_abena)
+# fetch all the tasks with the function
+ui.show_all_tasks_frame(app)
+
+# show/run the app
+app.mainloop()
